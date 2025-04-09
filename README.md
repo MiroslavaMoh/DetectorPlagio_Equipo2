@@ -61,7 +61,15 @@ graficar_similitudes(similitudes, docs)
 
 El gráfico se guarda como un archivo PNG llamado `similitudes.png`.
 
-![Gráfico de similitudes](similitudes.png "Gráfico de calor de similitudes")
+![Gráfico de similitudes](resultados/similitudes.png "Gráfico de calor de similitudes")
+
+```python
+create_interactive_graph(similitudes)
+```
+
+El gráfico interactivo se muestra como una ventana que contiene un grafo.
+
+![Grafo de similitudes](resultados/grafo.png "Grafo de similitudes")
 
 ## Requisitos
 
@@ -71,6 +79,9 @@ El gráfico se guarda como un archivo PNG llamado `similitudes.png`.
   - `numpy`
   - `networkx `
   - `seaborn `
+  - `itertools`
+  - `os`
+  - `hashlib`
 
 Instala las dependencias con:
 
