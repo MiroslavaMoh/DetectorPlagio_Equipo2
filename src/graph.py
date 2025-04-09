@@ -32,7 +32,7 @@ def create_interactive_graph(similitudes):
 
     # Dibujar el grafo con mejoras visuales
     pos = nx.spring_layout(G, seed=42)  # Usa una disposición reproducible
-    sizes = [G.nodes[node]['size'] * 80 for node in G.nodes]  # Escala ajustada
+    sizes = [G.nodes[node]['size'] * 20 for node in G.nodes]  # Escala ajustada
     colors = [node for node in G.nodes]  # Colores basados en los valores de los nodos
     cmap = plt.cm.viridis  # Mapa de colores atractivo
 

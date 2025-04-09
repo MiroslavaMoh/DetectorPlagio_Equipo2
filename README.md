@@ -69,6 +69,8 @@ El gráfico se guarda como un archivo PNG llamado `similitudes.png`.
 - Bibliotecas necesarias:
   - `matplotlib`
   - `numpy`
+  - `networkx `
+  - `seaborn `
 
 Instala las dependencias con:
 
