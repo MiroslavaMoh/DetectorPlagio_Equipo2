@@ -2,6 +2,7 @@ from src.load_folder import load_documents_from_folder
 from src.hash_text import get_hashed_shingles
 from src.comparison import comparar_documentos, top_n_similares
 from src.graphics import graficar_similitudes
+from src.graph import create_interactive_graph
 
 carpeta = "./documentos/prueba_media"
 n = 3  # tamaño de n-gramas
@@ -27,3 +28,5 @@ for (doc1, doc2), sim in top_n_similares(similitudes, N_top):
 
 # Llamar a la función para graficar
 graficar_similitudes(similitudes, docs)
+
+create_interactive_graph(similitudes)
